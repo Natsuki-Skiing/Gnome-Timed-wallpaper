@@ -124,6 +124,12 @@ class SetManager(tk.Toplevel):
             self.callback(full_path)
             self.destroy()
 
+        import backGroundProcess
+
+        backProcess = backGroundProcess()
+        backProcess.setWallpaper()
+        backProcess.destroy()
+
 
 
 class TimeSelector(ttk.Frame):
